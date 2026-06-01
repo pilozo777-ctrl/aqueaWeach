@@ -1,0 +1,6 @@
+{
+  "name": "AquaWash",
+  "description": "Premium car wash booking system with loyalty points and customizable plans.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

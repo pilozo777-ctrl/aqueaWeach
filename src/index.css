@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-syne: "Syne", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+  --color-bg-dark: #080C10;
+  --color-bg-dark-2: #0D1318;
+  --color-bg-dark-3: #111820;
+  --color-surface-dark: #141C24;
+  --color-surface-dark-2: #1A2530;
+  --color-accent-cyan: #00D4FF;
+  --color-accent-blue: #0099CC;
+  --color-accent-gold: #F5C842;
+  --color-accent-green: #22D87A;
+}
+
+/* Base style resets and scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: #E8EDF2;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Background noise texture layer */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.6;
+}
+
