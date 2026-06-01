@@ -46,7 +46,7 @@ export default function App() {
     {
       id: 'AQ-9273',
       customerName: 'Carlos Mendoza',
-      phone: '+593 98 901 2515',
+      phone: '+593 098 901 2515',
       plate: 'PDH-8321',
       vehicleType: 'Camioneta',
       serviceName: 'Lavado Full',
@@ -116,7 +116,7 @@ export default function App() {
 
   // Generate WhatsApp dynamic booking URL
   const getWhatsAppBookingUrl = (booking: Booking | null) => {
-    if (!booking) return 'https://api.whatsapp.com/send?phone=593989012515';
+    if (!booking) return 'https://api.whatsapp.com/send?phone=5930989012515';
     
     const text = `¡Hola AquaWash! 👋 Acabo de agendar un turno desde la web. Aquí están mis detalles:
 
@@ -132,7 +132,7 @@ export default function App() {
 
 Por favor confirmen mi reserva. ¡Muchas gracias!`;
 
-    return `https://api.whatsapp.com/send?phone=593989012515&text=${encodeURIComponent(text)}`;
+    return `https://api.whatsapp.com/send?phone=5930989012515&text=${encodeURIComponent(text)}`;
   };
 
   // Process Booking submission
@@ -1298,8 +1298,8 @@ Por favor confirmen mi reserva. ¡Muchas gracias!`;
                 </li>
                 <li className="flex items-center gap-2">
                    <Phone className="w-4 h-4 text-accent-cyan shrink-0" />
-                  <a href="https://api.whatsapp.com/send?phone=593989012515" target="_blank" rel="noopener noreferrer" className="hover:text-accent-cyan transition-colors">
-                    +593 98 901 2515
+                  <a href="https://api.whatsapp.com/send?phone=5930989012515" target="_blank" rel="noopener noreferrer" className="hover:text-accent-cyan transition-colors">
+                    +593 098 901 2515
                   </a>
                 </li>
               </ul>
@@ -1594,7 +1594,7 @@ Por favor confirmen mi reserva. ¡Muchas gracias!`;
           ¿Dudas? Chatea con nosotros en WhatsApp 💬
         </div>
         <a
-          href="https://api.whatsapp.com/send?phone=593989012515&text=¡Hola%20AquaWash!%20Quisiera%20solicitar%20información%20o%20reservar%20un%20turno%20de%20lavado.%20🚗"
+          href="https://api.whatsapp.com/send?phone=5930989012515&text=¡Hola%20AquaWash!%20Quisiera%20solicitar%20información%20o%20reservar%20un%20turno%20de%20lavado.%20🚗"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 bg-[#21d366] hover:bg-[#25d366] text-white rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(33,211,102,0.45)] hover:shadow-[0_15px_40px_rgba(33,211,102,0.6)] hover:scale-110 active:scale-95 transition-all duration-300 relative cursor-pointer"
